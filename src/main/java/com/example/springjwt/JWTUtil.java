@@ -7,6 +7,7 @@ import java.security.Key;
 import java.util.Date;
 @Component
 public class JWTUtil {
+
     private final Key secretKey =
             Keys.secretKeyFor(io.jsonwebtoken.SignatureAlgorithm.HS256);
     public String generateToken(String email) {
